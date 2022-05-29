@@ -1,0 +1,37 @@
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-auto justify-content-center g-5">
+        {{cadprodutoContent}} 
+    </div> 
+</div>
+    <form method='POST' action="index.php?pg=produto&act=insert">
+
+            <div>
+                <label for="prodtipo">Tipo:</label><br>
+                    <input type="text" name="prodtipo" id="prodtipo" required>
+            </div><br>
+
+            <div>
+                <label for="prodcor">Cor:</label><br>
+                    <input type="text" name="prodcor" id="prodcor" required > 
+            </div><br>
+
+            <div>
+                <label for="prodvalor">Valor:</label><br>
+                    <input type="text" name="prodvalor" id="prodvalor" required> 
+            </div><br>
+
+            <div>
+                <label for="prodimg">Imagem:</label><br>
+                    <input type="text" name="prodimg" id="prodimg" required> 
+            </div><br>
+
+            <button class="btn btn-secondary" type="submit">ENVIAR</button>
+    </form>
+
+    
+    <style>
+        div {display:block;
+        aling-items: center;
+        justify-content: space-between;}    
+    </style>
+ 
